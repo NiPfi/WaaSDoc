@@ -1,0 +1,42 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}% 
+\contentsline {section}{\numberline {2}Requirements Engineering}{3}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Purpose \& Context}{3}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Functional Requirements}{4}{subsection.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.1}Target Group}{4}{subsubsection.2.2.1}% 
+\contentsline {subsubsection}{\numberline {2.2.2}{Use Cases}}{4}{subsubsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Non-functional Requirements}{9}{subsection.2.3}% 
+\contentsline {section}{\numberline {3}GUI and Navigation Design}{10}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Navigation Model}{10}{subsection.3.1}% 
+\contentsline {subsubsection}{\numberline {3.1.1}Potential sources of errors}{12}{subsubsection.3.1.1}% 
+\contentsline {paragraph}{User doesn't want to register}{12}{section*.2}% 
+\contentsline {paragraph}{User gets lost in a branch state}{12}{section*.3}% 
+\contentsline {paragraph}{User may not know that a click on a card shows the scrape history}{12}{section*.4}% 
+\contentsline {subsubsection}{\numberline {3.1.2}Automation in Navigation Design}{12}{subsubsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.2}HTML Prototype}{12}{subsection.3.2}% 
+\contentsline {section}{\numberline {4}Software Architecture}{12}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Class Diagram}{13}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Sequence Diagram}{13}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Deployment Diagram}{13}{subsection.4.3}% 
+\contentsline {section}{\numberline {5}Used technologies and frameworks}{15}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Front End}{15}{subsection.5.1}% 
+\contentsline {paragraph}{Angular}{15}{section*.5}% 
+\contentsline {subsection}{\numberline {5.2}Back End}{15}{subsection.5.2}% 
+\contentsline {paragraph}{.NET Core}{15}{section*.6}% 
+\contentsline {subparagraph}{ASP.NET Core}{15}{section*.7}% 
+\contentsline {subparagraph}{Entity Framework Core}{15}{section*.8}% 
+\contentsline {subparagraph}{ASP.NET Core Identity}{16}{section*.9}% 
+\contentsline {subsection}{\numberline {5.3}Deployment}{16}{subsection.5.3}% 
+\contentsline {paragraph}{Docker}{16}{section*.10}% 
+\contentsline {section}{\numberline {6}Usability testing methodology}{16}{section.6}% 
+\contentsline {section}{\numberline {7}Development strategy}{17}{section.7}% 
+\contentsline {section}{\numberline {8}Security Analysis}{18}{section.8}% 
+\contentsline {subsection}{\numberline {8.1}Open Source}{18}{subsection.8.1}% 
+\contentsline {subsection}{\numberline {8.2}Third party libraries}{18}{subsection.8.2}% 
+\contentsline {subsection}{\numberline {8.3}OWASP}{18}{subsection.8.3}% 
+\contentsline {section}{\numberline {9}Conclusion}{19}{section.9}% 
+\contentsline {subsection}{\numberline {9.1}Lessons Learned}{19}{subsection.9.1}% 
+\contentsline {subsection}{\numberline {9.2}Outlook}{19}{subsection.9.2}% 
+\contentsline {paragraph}{Error Handling \& Validation}{19}{section*.11}% 
+\contentsline {paragraph}{Testing}{19}{section*.12}% 
+\contentsline {paragraph}{Security}{19}{section*.13}% 
+\contentsline {paragraph}{User Experience}{20}{section*.14}% 

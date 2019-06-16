@@ -542,6 +542,40 @@ To minimise the risk of this security flaw we can regularly update the libraries
 
 Further analysis of security aspects for this project was done concerning the OWASP Top Ten Project (\cite{mOWASPTopTen}). Due to the scope of the project this analysis is not documented here.
 
+\section{Conclusion}
+
+The last chapter covers our Lessons Learned and what we plan to do with WaaS in the future.
+
+\subsection{Lessons Learned}
+\label{section:LessonsLearned}
+
+During this project we acquired many new skills. We got to explore new technologies and methods in the field of software development. Angular for example is a widely used and popular front-end technology and is often seen in combination with a REST API backend such as an ASP.NET webservice.
+Further we were able to gain experience with Azure DevOps by implementing a CD/CI pipeline for our project.
+
+
+While we started implementing WaaS we also noticed some of the difficulties that occur in a web development project. Even though we are a small team consisting of two people it already takes some effort to organize tasks and keep track of who is working on which features.
+
+
+Another task that took more effort than expected was writing unit tests. Due to the scope of the project we had to limit our testing to a few tests each for the backend and the frontend. If the project WaaS grows bigger than it is now it would be useful if not necessary to extend the testing to achieve better stability and quality of the code base. Even at this stage of WaaS we faced some situations where code refactoring broke another part of the project while we did not instantly notice it due to missing unit tests.
+
+\subsection{Outlook}
+
+All in all we we are content with how WaaS turned out. We think that with some more work it will be a usefull tool for various purposes and can eventually be published. Before that can happen however we would need to address a few aspects that are not fully done yet.
+
+\paragraph{Error Handling \& Validation}
+We already implemented basic form validation for all forms in WaaS yet the error messages could  be more userfriendly. For example we could implement features like checking the URL for an HTTP OK response when creating a new ScrapeJob or implement a more detailed validation message for the password requirements.
+\paragraph{Testing}
+As already described in \ref{section:LessonsLearned} we need to implement more tests to enhance the code quality.
+\paragraph{Security}
+There are many unanswered questions concerning the security of WaaS at this state. Apart from a closer look at the OWASP top ten security risks there is also the question of how WaaS could be abused by users to do malicious actions. As example there is the DOS problem. If there are too many requests from WaaS to a specific url it could be seen as a DOS attack and the IP address of WaaS would eventually be blocked from that website. This exploit could potentially be prevented by a limit to the amount of ScrapeJobs a user can create.
+
+Another example would be the possibility to use WaaS to spam someone else with E-Mail messages. At this time the alternative E-Mail field for a ScrapeJob has no validation if the entered email address is owned by the current user. If one entered the email of someone else there the person who owns that email would get an email from WaaS whenever the ScrapeJob successfully executes. This could be prevented by allowing a user to add multiple email addresses to his account, which he would have to verify. Then a user could only select one of the verified email addresses upon creating a ScrapeJob.
+
+\paragraph{User Experience}
+Lastly the frontend could need some improvements concerning it's design and for a better user experience we could add some guides on how to use WaaS and how to create ScrapeJobs with regular expressions.\\
+
+Since we like the idea of WaaS and the state that it is in now we plan to continue working on WaaS in our freetime as personal project of ours. Once we implemented the missing features mentioned in this chapter we may eventually publish WaaS. Since WaaS is open source there is also the possibility that other people will see our project and help us improve it further.
+
 \pagebreak
 
 \listoftables
