@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.11)  17 JUN 2019 14:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.11)  17 JUN 2019 14:38
 entering extended mode
 **"c:/Users/jonas/Documents/WaaSDoc/Project Documentation/WaaS_Documentation.tex"
 ("c:/Users/jonas/Documents/WaaSDoc/Project Documentation/WaaS_Documentation.tex"
@@ -230,15 +230,15 @@ LaTeX Font Info:    ... okay on input line 38.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(90.3375pt, 433.62001pt, 90.3375pt)
-* v-part:(T,H,B)=(90.3375pt, 614.295pt, 90.3375pt)
+* h-part:(L,W,R)=(72.26997pt, 469.75505pt, 72.26997pt)
+* v-part:(T,H,B)=(72.26997pt, 650.43004pt, 72.26997pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=433.62001pt
-* \textheight=614.295pt
-* \oddsidemargin=18.0675pt
-* \evensidemargin=18.0675pt
-* \topmargin=-18.9325pt
+* \textwidth=469.75505pt
+* \textheight=650.43004pt
+* \oddsidemargin=-0.00002pt
+* \evensidemargin=-0.00002pt
+* \topmargin=-37.00002pt
 * \headheight=15.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -324,43 +324,38 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 File: UseCaseDiagram.PNG Graphic file (type png)
 <use UseCaseDiagram.PNG>
 Package pdftex.def Info: UseCaseDiagram.PNG  used on input line 83.
-(pdftex.def)             Requested size: 411.93768pt x 305.28943pt.
+(pdftex.def)             Requested size: 446.26585pt x 330.73021pt.
  [3 <c:/Users/jonas/Documents/WaaSDoc/Project Documentation/UseCaseDiagram.PNG>] [4] [5] [6] [7] [8] [9]
-<navigationmodel_waas.png, id=134, 1296.845pt x 1274.7625pt>
+<navigationmodel_waas.png, id=135, 1296.845pt x 1274.7625pt>
 File: navigationmodel_waas.png Graphic file (type png)
 <use navigationmodel_waas.png>
-Package pdftex.def Info: navigationmodel_waas.png  used on input line 396.
-(pdftex.def)             Requested size: 411.93768pt x 404.91739pt.
- [10] [11 <c:/Users/jonas/Documents/WaaSDoc/Project Documentation/navigationmodel_waas.png>] [12]
-<SequenceDiagram.png, id=161, 995.72pt x 790.955pt>
+Package pdftex.def Info: navigationmodel_waas.png  used on input line 399.
+(pdftex.def)             Requested size: 446.26585pt x 438.66536pt.
+ [10 <c:/Users/jonas/Documents/WaaSDoc/Project Documentation/navigationmodel_waas.png>] [11]
+<SequenceDiagram.png, id=157, 995.72pt x 790.955pt>
 File: SequenceDiagram.png Graphic file (type png)
 <use SequenceDiagram.png>
-Package pdftex.def Info: SequenceDiagram.png  used on input line 437.
-(pdftex.def)             Requested size: 411.93768pt x 327.22641pt.
- [13 <c:/Users/jonas/Documents/WaaSDoc/Project Documentation/SequenceDiagram.png>]
-<DeploymentDiagram.png, id=169, 1063.975pt x 501.875pt>
+Package pdftex.def Info: SequenceDiagram.png  used on input line 442.
+(pdftex.def)             Requested size: 446.26585pt x 354.50232pt.
+ [12 <c:/Users/jonas/Documents/WaaSDoc/Project Documentation/SequenceDiagram.png>]
+<DeploymentDiagram.png, id=166, 1063.975pt x 501.875pt>
 File: DeploymentDiagram.png Graphic file (type png)
 <use DeploymentDiagram.png>
-Package pdftex.def Info: DeploymentDiagram.png  used on input line 446.
-(pdftex.def)             Requested size: 411.93768pt x 194.30608pt.
- [14 <c:/Users/jonas/Documents/WaaSDoc/Project Documentation/DeploymentDiagram.png>] [15] [16]
-<scrapeJobCard.png, id=192, 246.5461pt x 135.88266pt>
+Package pdftex.def Info: DeploymentDiagram.png  used on input line 451.
+(pdftex.def)             Requested size: 446.26585pt x 210.50272pt.
+ [13 <c:/Users/jonas/Documents/WaaSDoc/Project Documentation/DeploymentDiagram.png>] [14] [15]
+<scrapeJobCard.png, id=189, 246.5461pt x 135.88266pt>
 File: scrapeJobCard.png Graphic file (type png)
 <use scrapeJobCard.png>
-Package pdftex.def Info: scrapeJobCard.png  used on input line 510.
-(pdftex.def)             Requested size: 216.81pt x 119.50037pt.
- [17 <c:/Users/jonas/Documents/WaaSDoc/Project Documentation/scrapeJobCard.png>]
-<KanbanBoard.png, id=200, 496.85625pt x 502.87875pt>
+Package pdftex.def Info: scrapeJobCard.png  used on input line 515.
+(pdftex.def)             Requested size: 234.87752pt x 129.45891pt.
+ [16 <c:/Users/jonas/Documents/WaaSDoc/Project Documentation/scrapeJobCard.png>]
+<KanbanBoard.png, id=197, 496.85625pt x 502.87875pt>
 File: KanbanBoard.png Graphic file (type png)
 <use KanbanBoard.png>
-Package pdftex.def Info: KanbanBoard.png  used on input line 529.
-(pdftex.def)             Requested size: 281.85036pt x 285.27034pt.
- [18 <c:/Users/jonas/Documents/WaaSDoc/Project Documentation/KanbanBoard.png>] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 589--590
-
- []
-
-[21] ("c:/Users\jonas\Documents\WaaSDoc\Project Documentation\WaaS_Documentation.lot")
+Package pdftex.def Info: KanbanBoard.png  used on input line 534.
+(pdftex.def)             Requested size: 305.3379pt x 309.04224pt.
+ [17 <c:/Users/jonas/Documents/WaaSDoc/Project Documentation/KanbanBoard.png>] [18] [19] [20] ("c:/Users\jonas\Documents\WaaSDoc\Project Documentation\WaaS_Documentation.lot")
 \tf@lot=\write4
 \openout4 = `WaaS_Documentation.lot'.
 
@@ -368,27 +363,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 589--590
 \tf@lof=\write5
 \openout5 = `WaaS_Documentation.lof'.
 
- [22] ("c:/Users\jonas\Documents\WaaSDoc\Project Documentation\WaaS_Documentation.bbl")
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 604.
- [23]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 604.
+ [21] ("c:/Users\jonas\Documents\WaaSDoc\Project Documentation\WaaS_Documentation.bbl")
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 610.
+ [22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 610.
  ("c:/Users\jonas\Documents\WaaSDoc\Project Documentation\WaaS_Documentation.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 604.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 604.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 604.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 610.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 610.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 610.
  ) 
 Here is how much of TeX's memory you used:
- 6546 strings out of 492946
- 98358 string characters out of 3126266
- 202449 words of memory out of 3000000
+ 6545 strings out of 492946
+ 98351 string characters out of 3126266
+ 205470 words of memory out of 3000000
  10272 multiletter control sequences out of 15000+200000
  8977 words of font info for 32 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,11n,43p,1048b,493s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,12n,43p,1048b,493s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jonas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "c:/Users\jonas\Documents\WaaSDoc\Project Documentation\WaaS_Documentation.pdf" (24 pages, 348454 bytes).
+Output written on "c:/Users\jonas\Documents\WaaSDoc\Project Documentation\WaaS_Documentation.pdf" (23 pages, 347862 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 97 named destinations out of 1000 (max. 500000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
  231 words of extra memory for PDF output out of 10000 (max. 10000000)
 
