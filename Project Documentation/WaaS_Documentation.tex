@@ -493,6 +493,7 @@ even though the build process for a docker image can be tedious to maintain.
 
 WaaS is configured to run inside a Docker container. That container contains the Web API (back-end) and Angular App (front-end). During the deployment process this docker container gets pushed to the azure container registry and will then run in the azure cloud. A visual representation of the deployed application state of WaaS can be seen in figure \ref{fig:deploymentDiagram}.
 
+\pagebreak
 
 \section {Usability testing methodology}
 Even though there is no formal usability testing planned at the moment, WaaS should offer a good amount of user-friendliness.
@@ -500,8 +501,22 @@ If possible, users should be offered help in the form of visual guides where nec
 Furthermore, users should be able to provide feedback for example in the form of GitHub issues or a simple E-Mail, in order to record and implement the requirements of the actual users of WaaS.
 The Usability of WaaS could be evaluated by a simplified usability test with the help of friends and family.
 There is also the possibility to use an Automated Expert Review for the purpose of a quick and low-cost usability review.
+
 Lastly, A/B tests could be used to evaluate specific changes in the application which is possible due to the containerized deployment strategy allowing to have two slightly different
-instances of an application up and running or to replace one version with another in a relatively easy way.
+instances of an application up and running or to replace one version with another in a relatively easy way. An example for a possible A/B Test would be the actions a user can do with ScrapeJobs ("Show History","Edit","Delete","Toggle Enabled"). The way the actions are currently implemented is via icons on each ScrapeJob card as shown in \ref{fig:scrapeJobCard}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\linewidth]{scrapeJobCard.png}
+  \caption{Scrape Job Card}
+  \label{fig:scrapeJobCard}
+\end{figure}
+
+One other possible way to implement those actions would be as a a menu bar on top of the page with the possibility to select ScrapeJobs. This would have the advantage that for the actions "Toggle Enabled" and "Delete" you could select multiple ScrapeJobs at once.
+Our hypothesis is that the icons on the ScrapeJob card are more intuitive to the user. Also it would eventually lead to a smaller error rate due to the possibility that the menu bar could lead users to think that they can also edit multiple ScrapeJobs at once.
+With the help of A/B testing we could find out if our hypothesis is correct.
+
+\pagebreak
 
 \section{Development strategy}
 

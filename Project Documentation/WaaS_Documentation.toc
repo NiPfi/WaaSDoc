@@ -27,16 +27,16 @@
 \contentsline {subparagraph}{ASP.NET Core Identity}{16}{section*.9}% 
 \contentsline {subsection}{\numberline {5.3}Deployment}{16}{subsection.5.3}% 
 \contentsline {paragraph}{Docker}{16}{section*.10}% 
-\contentsline {section}{\numberline {6}Usability testing methodology}{16}{section.6}% 
-\contentsline {section}{\numberline {7}Development strategy}{17}{section.7}% 
-\contentsline {section}{\numberline {8}Security Analysis}{18}{section.8}% 
-\contentsline {subsection}{\numberline {8.1}Open Source}{18}{subsection.8.1}% 
-\contentsline {subsection}{\numberline {8.2}Third party libraries}{18}{subsection.8.2}% 
-\contentsline {subsection}{\numberline {8.3}OWASP}{18}{subsection.8.3}% 
-\contentsline {section}{\numberline {9}Conclusion}{19}{section.9}% 
-\contentsline {subsection}{\numberline {9.1}Lessons Learned}{19}{subsection.9.1}% 
-\contentsline {subsection}{\numberline {9.2}Outlook}{19}{subsection.9.2}% 
-\contentsline {paragraph}{Error Handling \& Validation}{19}{section*.11}% 
-\contentsline {paragraph}{Testing}{19}{section*.12}% 
-\contentsline {paragraph}{Security}{19}{section*.13}% 
-\contentsline {paragraph}{User Experience}{20}{section*.14}% 
+\contentsline {section}{\numberline {6}Usability testing methodology}{17}{section.6}% 
+\contentsline {section}{\numberline {7}Development strategy}{18}{section.7}% 
+\contentsline {section}{\numberline {8}Security Analysis}{19}{section.8}% 
+\contentsline {subsection}{\numberline {8.1}Open Source}{19}{subsection.8.1}% 
+\contentsline {subsection}{\numberline {8.2}Third party libraries}{19}{subsection.8.2}% 
+\contentsline {subsection}{\numberline {8.3}OWASP}{19}{subsection.8.3}% 
+\contentsline {section}{\numberline {9}Conclusion}{20}{section.9}% 
+\contentsline {subsection}{\numberline {9.1}Lessons Learned}{20}{subsection.9.1}% 
+\contentsline {subsection}{\numberline {9.2}Outlook}{20}{subsection.9.2}% 
+\contentsline {paragraph}{Error Handling \& Validation}{20}{section*.11}% 
+\contentsline {paragraph}{Testing}{20}{section*.12}% 
+\contentsline {paragraph}{Security}{20}{section*.13}% 
+\contentsline {paragraph}{User Experience}{21}{section*.14}% 
