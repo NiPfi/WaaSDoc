@@ -49,7 +49,7 @@
 
 \section{Introduction}
 
-This is the documentation of the project WaaS, which was done as part of the module Web Engineering at the FFHS. The goal of the project is to create a concept and implement a web application which fulfills at least the following criteria:
+This is the documentation of the project "Web-scraper as a Service" or WaaS for short, which was done as part of the module Web Engineering at the FFHS. The goal of the project is to create a concept and implement a web application which fulfills at least the following criteria:
 
 \begin{itemize}
   \item Basic user authentication (register, login/logout, delete and update user)
@@ -75,7 +75,7 @@ This chapter contains purpose and context of the web application WaaS as well as
 
 \subsection{Purpose \& Context}
 
-WaaS (Web Scraper as a Service) is a service, that allows users to keep track of news on their favourite websites, by giving them the possibility to create "Scrapes". A Scrape is defined with a URL, a search pattern and an email address. WaaS will regularly check those URLs for the given search patterns and notifies the users via their email address when it finds the pattern it was searching for.
+WaaS is a service, that allows users to keep track of news on their favourite websites, by giving them the possibility to create "Scrapes". A Scrape is defined with a URL, a search pattern and an E-Mail address. WaaS will regularly check those URLs for the given search patterns and notifies the users via their E-Mail address when it finds the pattern it was searching for.
 \medskip \\
 The following graphic visualizes the context of the app with it's use cases.
 
@@ -105,14 +105,14 @@ The target group of WaaS are mainly people that are regularly checking websites 
       \hline
       Actors           & Eventual user of WaaS                                                                                        \\
       \hline
-      Precondition     & The user owns a valid email address that is not yet used for an existing user account                        \\
+      Precondition     & The user owns a valid E-Mail address that is not yet used for an existing user account                        \\
       \hline
       Trigger          & Click on the button: "Register"                                                                              \\
       \hline
       Main path        &
       \begin{packed_itemize}
         \item [1] The user clicks the button: "SignUp".
-        \item [2] The user enters his credentials into the register form (email address, and password).
+        \item [2] The user enters his credentials into the register form (E-Mail address, and password).
         \item [3] The user clicks on: "Register".
         \item [4] WaaS creates a user account entry in the database.
         \item [5] The user gets redirected to the Login Page.
@@ -149,7 +149,7 @@ The target group of WaaS are mainly people that are regularly checking websites 
       \hline
       Main path        &
       \begin{packed_itemize}
-        \item [1] The user enters a valid email address an password into the login form.
+        \item [1] The user enters a valid E-Mail address an password into the login form.
         \item [2] The user clicks on the button: "LogIn".
       \end{packed_itemize}                                                         \\
       \hline
@@ -422,13 +422,13 @@ Once a navigation design was created, it can be useful to analyze it in order to
 Since WaaS is a rather small and simple application we found it unnecessary to do automated analytics of our navigation design.
 
 \subsection{HTML Prototype}
-To visualize the navigation model, a HTML Prototype was created and is available either in the adjacent documents to this documentation or through the GitHub Page on \url{https://nipfi.github.io/ffhs-WebE/HTML%20Prototype/index.html}.
+To visualize the navigation model, a HTML Prototype was created and is available either in the adjacent documents to this documentation or through the GitHub Page on \url{https://nipfi.github.io/WaaSDoc/HTML%20Prototype/index.html}.
 
 \section{Software Architecture}
 This chapter is about the planned architectural strucutre of WaaS. The goal is to visualize some parts of the architecture for a better understanding of how WaaS is composed.
 
 \subsection{Class Diagram}
-The class diagram shows a visual representation of the class structure of WaaS. It is meant to show a basic overview and there may be some deviations from the actual implementation. Due to the size of the class diagramm it is not included in this pdf file. It can be found as attachment with the name "ClassDiagram.svg".
+The class diagram shows a visual representation of the class structure of WaaS. It is meant to show a basic overview and there may be some deviations from the actual implementation. Due to the size of the class diagram it is not included in this PDF file. It can be found as attachment with the name "ClassDiagram.svg".
 
 \subsection{Sequence Diagram}
 The following figure \ref{fig:sequenceDiagram} shows the procedure of a login sequence for WaaS.
@@ -440,7 +440,7 @@ The following figure \ref{fig:sequenceDiagram} shows the procedure of a login se
 \end{figure}
 
 \subsection{Deployment Diagram}
-The deployment diagram shows the environment of the Deployment process for the application WaaS. Both the Web API and the Angular Application are hostet in the azure cloud as seen in \ref{fig:deploymentDiagram}. The angular application will on request be served to the client and will be executed from there.
+The deployment diagram shows the environment of the Deployment process for the application WaaS. Both the Web API and the Angular Application are hosted in the azure cloud as seen in \ref{fig:deploymentDiagram}. The angular application will on request be served to the client and will be executed from there.
 
 \begin{figure}[H]
   \includegraphics[width=0.95\linewidth]{DeploymentDiagram.png}
@@ -465,10 +465,9 @@ We chose this technology for the front end because angular is a popular framewor
 \subsection{Back End}
 
 \paragraph{.NET Core}
-As a relatively young part of the .NET landscape .NET Core improves on many shortcomings of .NET Framework. Not only is it open-source, it also runs cross-platform and is generally less demanding in resources,
-which makes it more suited for deployments in cloud services, containerized or not.
+As a relatively young part of the .NET landscape, .NET Core improves on many shortcomings of .NET Framework. Not only is it open-source, it also runs cross-platform and is generally less demanding in resources, which makes it more suited for deployments in cloud services, containerized or not.
 
-The reason we chose the .NET environment for our Backend is that we are used to working with it and want to get to know it better. It is commonly used by many developers and counts as one of the top technologies looked for in the industry of software development.
+The reason we chose the .NET environment for our Back-end is that we are used to working with it and want to get to know it better. It is commonly used by many developers and counts as one of the top technologies looked for in the industry of software development.
 
 \subparagraph{ASP.NET Core}
 ASP.NET Core is the .NET Core equivalent of the ASP.NET web application framework and provides powerful yet simple to use methods for implementing REST APIs. It practically is built-in to any
@@ -483,7 +482,7 @@ WaaS uses ASP.NET Core Identity because in many cases it's a better choice for s
 since it's quite a basic requirement for many web applications, we believe it to be a better approach to consolidate efforts to promote web application security. ASP.NET Core Identity integrates very well with the other
 frameworks used in this back end dependency constellation.
 
-Nowadays it often is a wise idea to use an existing framework to handle identity management. Implementing this by yourself can lead to security flaws and one has to put a lot of work in it to achieve a secure system. That is why we decided to use ASP.NET Core Identity as our technology for identity management. An example for an alternative would be firebase auth. We did not further research alternatives since .NET Core Identity is well integrated to the .NET environment and works very well along with a ASP.NET Web API.
+Nowadays it often is a wise idea to use an existing framework to handle identity management. Implementing this by yourself can lead to security flaws and one has to put a lot of work in it to achieve a secure system. That is why we decided to use ASP.NET Core Identity as our technology for identity management. An example for an alternative would be firebase auth. We did not further research alternatives since .NET Core Identity is well integrated to the .NET environment and works very well along with a ASP.NET Web API and it could be integrated with third party OAuth providers like Google or GitHub.
 
 \subsection{Deployment}
 
@@ -492,7 +491,7 @@ By using Docker, WaaS can be deployed in virtually any environment from a simple
 The complexity of managing software dependencies in a restricted server environment is completely eliminated which is advantageous
 even though the build process for a docker image can be tedious to maintain.
 
-WaaS is configured to run inside a Docker container. That container contains the Web API (backend) and Angular App (frontend). During the deployment process this docker container gets pushed to the azure container registry and will then run in the azure cloud. A visual representation of the deployed application state of WaaS can be seen in figure \ref{fig:deploymentDiagram}.
+WaaS is configured to run inside a Docker container. That container contains the Web API (back-end) and Angular App (front-end). During the deployment process this docker container gets pushed to the azure container registry and will then run in the azure cloud. A visual representation of the deployed application state of WaaS can be seen in figure \ref{fig:deploymentDiagram}.
 
 
 \section {Usability testing methodology}
@@ -506,9 +505,9 @@ instances of an application up and running or to replace one version with anothe
 
 \section{Development strategy}
 
-As model for the development process we used a tailored version of scrum. The tailored version of scrum defines an iterative and agile approach for software development.
+As model for the development process we used a tailored version of Scrum. The tailored version of Scrum defines an iterative and agile approach for software development.
 
-Due to the two week submission cycle of the project we used a duration of two weeks for each sprint. The sprint backlog of each cycle consists of the tasks that were predefined by the submissions. To track those backlog workitems we used Github issues and defined milestones for the sprints. We further separated User Stories into small packages and used a Kanban board (figure \ref{fig:kanbanBoard}) in Azure DevOps to be able to work together more efficiently. The kanban board consists of the rows "Todo", "In progress", "Testing" and "Done". Once one of us implemented a task and had moved it to Testing the other one reviewed it and did some manual testing. Through the kanban board we always had a good overview of the development progress. 
+Due to the two week submission cycle of the project we used a duration of two weeks for each sprint. The sprint backlog of each cycle consists of the tasks that were predefined by the submissions. To track those backlog work items we used GitHub issues and defined milestones for the sprints. We further separated User Stories into small packages and used a Kanban board (figure \ref{fig:kanbanBoard}) in Azure DevOps to be able to work together more efficiently. The kanban board consists of the rows "To do", "In progress", "Testing" and "Done". Once one of us implemented a task and had moved it to Testing the other one reviewed it and did some manual testing. Through the kanban board we always had a good overview of the development progress. 
 
 \begin{figure}[H]
   \centering
@@ -517,7 +516,7 @@ Due to the two week submission cycle of the project we used a duration of two we
   \label{fig:kanbanBoard}
 \end{figure}
 
-Since we used a tailored version of scrum we did not do any daily scrum meetings and had no sprint retrospective. This would not have been easily achievable due to different work times and work locations. Also we did not have a traditional scrum management hierarchy with scrum master and product manager due to our team size being limited to two people.
+Since we used a tailored version of Scrum we did not do any daily Scrum meetings and had no sprint retrospective. This would not have been easily achievable due to different work times and work locations. Also we did not have a traditional Scrum management hierarchy with Scrum master and product manager due to our team size being limited to two people.
 
 \section{Security Analysis}
 
@@ -526,7 +525,7 @@ In the scope of the project we analysed security aspects of WaaS. Specifically w
 \subsection{Open Source}
 \label{sec:opensource}
 
-Our project WaaS is licensed under the open source license AGPL 3.0. Therefor our projects source code can be found publicly on github. While a principle of open source software is that it can be reviewed and tested by other people this may also be a security risk. If there are any overlooked security flaws to be found in our code they can be discovered by anyone. It is then up to those people to decide if they contact us about the flaw or if they plan to do malicious actions with that information.
+WaaS' source code is licensed under the open source license AGPL 3.0 and can be found publicly on GitHub under \url{https://github.com/NiPfi/WaaS}. While a principle of open source software is that it can be reviewed and tested by other people this may also be a security risk. If there are any overlooked security flaws to be found in our code they can be discovered by anyone. It is then up to those people to decide if they contact us about the flaw or if they plan to do malicious actions with that information.
 
 
 One way to prevent this potential security flaw would be to make our project closed source. We don't want to do so because we are supporters of open source software and we accept the risks that come with it. Also we believe that this flaw will possibly be balanced out by helping members of the community that would point out flaws in the code.
@@ -549,32 +548,32 @@ The last chapter covers our Lessons Learned and what we plan to do with WaaS in 
 \subsection{Lessons Learned}
 \label{section:LessonsLearned}
 
-During this project we acquired many new skills. We got to explore new technologies and methods in the field of software development. Angular for example is a widely used and popular front-end technology and is often seen in combination with a REST API backend such as an ASP.NET webservice.
-Further we were able to gain experience with Azure DevOps by implementing a CD/CI pipeline for our project.
+During this project we acquired many new skills. We got to explore new technologies and methods in the field of software development. Angular for example is a widely used and popular front-end technology and is often seen in combination with a REST API back-end such as an ASP.NET web service.
+Further we were able to gain experience with Azure DevOps by implementing a CI/CD pipeline for our project.
 
 
 While we started implementing WaaS we also noticed some of the difficulties that occur in a web development project. Even though we are a small team consisting of two people it already takes some effort to organize tasks and keep track of who is working on which features.
 
 
-Another task that took more effort than expected was writing unit tests. Due to the scope of the project we had to limit our testing to a few tests each for the backend and the frontend. If the project WaaS grows bigger than it is now it would be useful if not necessary to extend the testing to achieve better stability and quality of the code base. Even at this stage of WaaS we faced some situations where code refactoring broke another part of the project while we did not instantly notice it due to missing unit tests.
+Another task that took more effort than expected, was writing unit tests. Due to the scope of the project we had to limit our testing to a few tests each for the back-end and the front-end. If the project WaaS grows bigger than it is now it would be useful, if not necessary, to extend the testing to achieve better stability and quality of the code base. Even at this stage of WaaS we faced some situations where code refactoring broke another part of the project which we did not instantly notice due to missing unit tests.
 
 \subsection{Outlook}
 
-All in all we we are content with how WaaS turned out. We think that with some more work it will be a usefull tool for various purposes and can eventually be published. Before that can happen however we would need to address a few aspects that are not fully done yet.
+All in all we are content with how WaaS turned out. We think that with some more work it will be a useful tool for various purposes and can eventually be published. Before that can happen however, we would need to address a few aspects that are not fully done yet.
 
 \paragraph{Error Handling \& Validation}
-We already implemented basic form validation for all forms in WaaS yet the error messages could  be more userfriendly. For example we could implement features like checking the URL for an HTTP OK response when creating a new ScrapeJob or implement a more detailed validation message for the password requirements.
+We already implemented basic form validation for all forms in WaaS, yet the error messages could  be more user friendly. For example, we could implement features like checking the URL for an HTTP OK response when creating a new ScrapeJob, or implement a more detailed validation message for the password requirements.
 \paragraph{Testing}
-As already described in \ref{section:LessonsLearned} we need to implement more tests to enhance the code quality.
+As already described in \ref{section:LessonsLearned}, we need to implement more tests to enhance the code quality.
 \paragraph{Security}
-There are many unanswered questions concerning the security of WaaS at this state. Apart from a closer look at the OWASP top ten security risks there is also the question of how WaaS could be abused by users to do malicious actions. As example there is the DOS problem. If there are too many requests from WaaS to a specific url it could be seen as a DOS attack and the IP address of WaaS would eventually be blocked from that website. This exploit could potentially be prevented by a limit to the amount of ScrapeJobs a user can create.
+There are some unanswered questions concerning the security of WaaS at this state. Apart from a closer look at the OWASP top ten security risks, there is also the question of how WaaS could be abused by users to do malicious actions. As example there is the DOS problem. If there are too many requests from WaaS to a specific URL it could be seen as a DOS attack and the IP address of WaaS would eventually be blocked from accessing that website. This exploit is already mitigated a bit by the Scrape caching mechanism, that stores scraped HTML files in a Map with their URL as the key. To further prevent abuse, a limit to the amount of ScrapeJobs a user can create could be implemented.
 
-Another example would be the possibility to use WaaS to spam someone else with E-Mail messages. At this time the alternative E-Mail field for a ScrapeJob has no validation if the entered email address is owned by the current user. If one entered the email of someone else there the person who owns that email would get an email from WaaS whenever the ScrapeJob successfully executes. This could be prevented by allowing a user to add multiple email addresses to his account, which he would have to verify. Then a user could only select one of the verified email addresses upon creating a ScrapeJob.
+Another example would be the possibility to use WaaS to spam someone else with E-Mail messages. At this time the alternative E-Mail field for a ScrapeJob has no mechanism to verify, if the entered E-Mail address is owned by the current user or if the potential recipient wishes to receive those E-Mails. If one entered the E-Mail of someone else there, the person who owns that address would get an E-Mail from WaaS whenever the ScrapeJob successfully executes. This could be prevented by allowing a user to add multiple E-Mail addresses to his account, which he would have to verify. Then a user could only select one of the verified E-Mail addresses upon creating a ScrapeJob. Furthermore, the mail notifications should provide an unsubscribe link that can be used to disable notifications for a ScrapeJob without having to log in. This feature could also be extended by a "report abuse" link, that leads to the account being disabled if triggered multiple times.
 
 \paragraph{User Experience}
-Lastly the frontend could need some improvements concerning it's design and for a better user experience we could add some guides on how to use WaaS and how to create ScrapeJobs with regular expressions.\\
+Lastly the front-end could benefit from improvements to its design and user experience. We could add some guides on how to use WaaS and how to create ScrapeJobs with regular expressions.\\
 
-Since we like the idea of WaaS and the state that it is in now we plan to continue working on WaaS in our freetime as personal project of ours. Once we implemented the missing features mentioned in this chapter we may eventually publish WaaS. Since WaaS is open source there is also the possibility that other people will see our project and help us improve it further.
+Since we like the idea of WaaS and the state that it is in now, we plan to continue working on WaaS in our spare time as personal project of ours. Once we implemented the missing features mentioned in this chapter we may eventually publish WaaS. Since WaaS is open source there is also the possibility that other people will see our project and help us improve it further.
 
 \pagebreak
 
